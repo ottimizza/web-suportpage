@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -215,32 +216,18 @@
       </div>
     </div>
   </div>
-  <!-- TOLVNOW __INIT -->
   <script type="text/javascript">
-    var _tn = _tn || [];
-    _tn.push(['account', '3b55e4f36586365f08fe5013a6a791c7']);
-    _tn.push(['action', 'track-view']);
-    (function () {
-      document.write(unescape("%3Cspan id='tolvnow'%3E%3C/span%3E"));
-      var tss = document.createElement('script');
-      tss.type = 'text/javascript';
-      tss.async = true;
-      //tss.src = 'https://tracker.tolvnow.com/js/tn.js';
-      tss.src = '${pageContext.request.contextPath}/lib/tn.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(tss, s);
+	var _tn = _tn || [];
+	_tn.push(['account','3b55e4f36586365f08fe5013a6a791c7']);
+	_tn.push(['action','track-view']);
+	(function() {
+		document.write(unescape("%3Cspan id='tolvnow'%3E%3C/span%3E"));
+		var tss = document.createElement('script'); tss.type = 'text/javascript'; tss.async = true;
+		tss.src = 'https://tracker.tolvnow.com/js/tn.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tss, s);
+	})();</script>
 
-    })();
-
-  </script>
-
-  <script>
-    _tno.load(function () {
-      $('#tolvnow-caller').css('display', 'none');
-      $('#tolvnow-chat').css('top', '52px');
-      $('#tolvnow-chat').css('right', '6px');
-    });
-  </script>
+  
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
